@@ -1,7 +1,10 @@
 /*
  * A test code for beginner
- * @Quinit 2025.10.25
+ * @author Quinit
+ * @version 1.0
  */
+
+import static java.lang.Math.*;
 
 //顶层定义
 enum Size {X,Z,M};
@@ -15,6 +18,11 @@ public class Welcome {
             System.out.println("=");
         }
         System.out.println("");
+        CLASS a = new CLASS("Test");
+        System.out.println(a.getRecore());
+        CLASS.main(args);
+  
+
     }
 
     public static void test(){
@@ -51,7 +59,7 @@ public class Welcome {
         var NumA = 1;
         System.out.println(NumA + 1);
         final var A_SPECIAL_VAL = 4;
-        Math.sqrt(NumA);
+        sqrt(NumA);
         int code = 0;
         String seasonString = switch(code){
             case 0 -> "spring";
@@ -73,5 +81,7 @@ public class Welcome {
         if(str.equals(""));
         if(str != null && str.length() != 0 );
     }
+    CLASS a = new CLASS("Test");
+
 }
 
