@@ -4,12 +4,24 @@
  * @version 1.0
  */
 
+import java.io.IOException;
 import static java.lang.Math.*;
+import java.sql.SQLException;
 
 //顶层定义
 enum Size {X,Z,M};
 
-public class Welcome {
+public class Welcome implements InterfaceA {
+
+    public Welcome() {
+    }
+
+    @Override
+    public void MethondA() throws SQLException, IOException{
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    
     public enum Size {X,Z,M};
     public static void main(String[] args){
         String greeting = "Welcome to Core Java!";
@@ -21,10 +33,8 @@ public class Welcome {
         CLASS a = new CLASS("Test");
         System.out.println(a.getRecore());
         CLASS.main(args);
-  
-
     }
-
+    
     public static void test(){
         //整数
         int NumA = 2147483647; //注释
@@ -55,16 +65,16 @@ public class Welcome {
     }
 
     public static void math(){
-        enum Sze {X,Z,M};//局部枚举 java16+
         var NumA = 1;
         System.out.println(NumA + 1);
-        final var A_SPECIAL_VAL = 4;
+        
         sqrt(NumA);
         int code = 0;
         String seasonString = switch(code){
             case 0 -> "spring";
             default -> "?";
         };
+        System.out.println(seasonString);
 
     }
 
@@ -79,9 +89,7 @@ public class Welcome {
         if(str.equalsIgnoreCase(str));
         if(str.length() == 0 );
         if(str.equals(""));
-        if(str != null && str.length() != 0 );
+        if(str.length() != 0 );
     }
-    CLASS a = new CLASS("Test");
-
 }
 

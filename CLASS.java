@@ -16,7 +16,6 @@ public class CLASS {
     }
     
 
-
     public String getNAME() {
         return NAME;
     }
