@@ -30,7 +30,7 @@ public class Welcome implements InterfaceA {
             System.out.println("=");
         }
         System.out.println("");
-        CLASS a = new CLASS("Test");
+        CLASS a = new CLASS("TestApp","1.0",1000);
         System.out.println(a.getRecore());
         CLASS.main(args);
     }
